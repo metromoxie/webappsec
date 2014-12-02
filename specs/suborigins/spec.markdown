@@ -71,7 +71,7 @@ cookie access, storage access, etc. to different suborigins.
 Not sure how to actually refer to 'real origins'. This is a terrible name, and
 we need a better way to talk about them. Maybe physical origin? Traditional
 origin? (jww)
-{:.issue data-number="1"}
+{:.issue}
 </section><!-- /Introduction::Goals -->
 
 <section>
@@ -101,5 +101,54 @@ each user profile into a unique suborigin so that an XSS within one profile
 cannot be used to immediately infect other users or read their personal
 messages stored within the account.
 
-</section> <!-- /Introduction::Use Cases/Examples -->
-</section> <!-- /Introduction -->
+</section><!-- /Introduction::Use Cases/Examples -->
+</section><!-- /Introduction -->
+
+<section id="conformance">
+
+Conformance requirements phrased as algorithms or specific steps can be
+implemented in any manner, so long as the end result is equivalent. In
+particular, the algorithms defined in this specification are intended to
+be easy to understand and are not intended to be performant. Implementers
+are encouraged to optimize.
+
+<section>
+### Key Concepts and Terminology
+
+This section defines several terms used throughout the document.
+
+</section> <!-- /Conformance::Key Concepts and Terminology -->
+</section> <!-- /Conformance -->
+
+<section>
+### Defining a Suborigin
+
+</section> <!-- /Defining a Suborigin -->
+
+<section>
+### Serialization
+
+</section> <!-- /Serialization -->
+
+<section>
+### CORS
+
+</section> <!-- /CORS -->
+
+<section>
+### Permissions
+
+This section should probably be called something else other than 'permissions'
+which is an exceedingly ambiguous term. (jww)
+{:.issue}
+</section> <!-- /Permissions -->
+
+<section>
+### Validating and Checking Origins and Suborigins
+
+</section> <!-- /Validating and Checking Origins and Suborigins -->
+
+<section>
+### Security Considerations
+
+</section> <!-- /Security Considerations -->
