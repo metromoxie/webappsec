@@ -1,10 +1,11 @@
-all: clean content-security-policy/index.html mixedcontent/index.html referrer-policy/index.html
+all: clean content-security-policy/index.html mixedcontent/index.html referrer-policy/index.html suborigins/index.html
 
 clean:
 	rm -rf ./content-security-policy/index.html
 	rm -rf ./credentialmanagement/index.html
 	rm -rf ./mixedcontent/index.html
 	rm -rf ./referrer-policy/index.html
+	rm -rf ./suborigins/index.html
 
 CREDENTIAL: credentialmanagement/index.html
 CREDENTIAL-FPWD: credentialmanagement/published/2015-04-FPWD.html
@@ -19,6 +20,7 @@ MIX-CR: mixedcontent/published/2015-02-CR.html
 POWER: powerfulfeatures/index.html
 POWER-WD: powerfulfeatures/published/WD.html
 REFERRER: referrer-policy/index.html
+SUBORIGINS: suborigins/index.html
 UPGRADE: upgrade/index.html
 UPGRADE-WD: upgrade/published/WD.html
 
@@ -60,6 +62,9 @@ powerfulfeatures/index.html: powerfulfeatures/index.src.html biblio.json
 
 powerfulfeatures/published/WD.html: powerfulfeatures/index.src.html biblio.json
 	bikeshed -f spec --md-status=WD ./powerfulfeatures/index.src.html ./powerfulfeatures/published/WD.html
+
+suborigins/index.html: suborigins/index.src.html biblio.json
+	bikeshed -f spec ./suborigins/index.src.html
 
 upgrade/index.html: upgrade/index.src.html biblio.json
 	bikeshed -f spec ./upgrade/index.src.html

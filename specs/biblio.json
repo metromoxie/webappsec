@@ -116,6 +116,16 @@
     "status": "ED",
     "publisher": "W3C"
   },
+  "PRIVILEGESEPARATION": {
+    "title": "Privilege Separation in HTML5 Applications",
+    "href": "https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final168.pdf",
+    "authors": [
+      "Devdatta Akhawe",
+      "Prateek Saxena",
+      "Dawn Song"
+    ],
+    "publisher": "USENIX"
+  },
   "PSL": {
     "authors": [ "Mozilla Foundation" ],
     "href": "https://publicsuffix.org/",
